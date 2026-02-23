@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franky Maring | Product Designer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // JS start top
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        bgLight: 'var(--color-bg-light)',
+                        textMain: 'var(--color-text-main)',
+                        textMuted: 'var(--color-text-muted)',
+                        borderLight: 'var(--color-border-light)'
+                    }
+                }
+            }
+        }
+        // JS end
+
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body class="bg-bgLight text-textMain antialiased flex flex-col min-h-screen transition-colors duration-300">
+
+    <!-- HTML start -->
+    <nav
+        class="fixed top-0 w-full bg-bgLight/90 backdrop-blur-sm z-50 border-b border-borderLight/50 transition-colors duration-300">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-sm font-semibold tracking-tight hover:opacity-70 transition-opacity">FM.</a>
+            <div class="flex items-center gap-6 text-sm font-medium text-textMuted">
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="hover:text-textMain transition-colors">About</a>
+                    <a href="#experience" class="hover:text-textMain transition-colors">Experience</a>
+                    <a href="#skills" class="hover:text-textMain transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-textMain transition-colors">Work</a>
+                    <a href="#contact" class="hover:text-textMain transition-colors">Contact</a>
+                </div>
+
+                <button id="theme-toggle"
+                    class="w-8 h-8 rounded-full bg-[#111] dark:bg-[#333] flex items-center justify-center hover:scale-110 transition-transform focus:outline-none shadow-sm"
+                    aria-label="Toggle Dark Mode">
+                    <svg id="theme-toggle-light-icon" class="hidden w-4 h-4 text-white"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4 text-white"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-5xl mx-auto px-6 pt-32 pb-20 w-full">
+
+        <!-- Hero Section -->
+        <section id="about" class="py-20 reveal">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-6">
+                Franky Maring
+            </h1>
+            <h2 class="text-xl md:text-2xl text-textMuted font-light max-w-2xl leading-relaxed">
+                A <span class="text-textMain font-medium">Product Designer</span> focused on creating intuitive,
+                user-centric digital experiences. I bridge the gap between complex business problems and elegant, simple
+                solutions.
+            </h2>
+            <div class="mt-10 flex gap-4">
+                <a href="mailto:zeroc00l.080818@gmail.com"
+                    class="bg-textMain text-bgLight px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition-opacity">
+                    Get in touch
+                </a>
+                <a href="https://www.linkedin.com/in/frankymaring" target="_blank"
+                    class="border border-borderLight px-6 py-3 rounded-full text-sm font-medium hover:border-textMain transition-colors flex items-center gap-2">
+                    LinkedIn
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <hr class="border-borderLight my-12 reveal">
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-12 reveal">
+            <h3 class="text-xs uppercase tracking-widest text-textMuted font-semibold mb-12">Experience</h3>
+
+            <div class="space-y-2">
+                <!-- Experience Item 1 -->
+                <div class="border-b border-borderLight group">
+                    <button class="w-full text-left flex justify-between items-center py-6 focus:outline-none"
+                        onclick="toggleAccordion('exp1')">
+                        <div class="flex flex-col md:flex-row md:items-start md:gap-8 w-full">
+                            <div class="text-textMuted text-sm md:w-32 flex-shrink-0 md:mt-1">
+                                2021 — Present
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold group-hover:text-textMuted transition-colors">Senior
+                                    Product Designer</h4>
+                                <p class="text-textMuted text-sm">Leading Tech Company</p>
+                            </div>
+                        </div>
+                        <span id="icon-exp1"
+                            class="text-textMuted text-2xl font-light transform transition-transform duration-300 ml-4">+</span>
+                    </button>
+                    <div id="exp1" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pb-8 md:pl-40">
+                            <p class="text-sm leading-relaxed max-w-2xl text-textMuted">
+                                Leading end-to-end design for core enterprise products. Spearheaded the redesign of the
+                                main dashboard, increasing user engagement by 40%. Collaborated closely with engineering
+                                and product management to establish a comprehensive design system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="border-b border-borderLight group">
+                    <button class="w-full text-left flex justify-between items-center py-6 focus:outline-none"
+                        onclick="toggleAccordion('exp2')">
+                        <div class="flex flex-col md:flex-row md:items-start md:gap-8 w-full">
+                            <div class="text-textMuted text-sm md:w-32 flex-shrink-0 md:mt-1">
+                                2018 — 2021
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold group-hover:text-textMuted transition-colors">UI/UX
+                                    Designer</h4>
+                                <p class="text-textMuted text-sm">Creative Digital Agency</p>
+                            </div>
+                        </div>
+                        <span id="icon-exp2"
+                            class="text-textMuted text-2xl font-light transform transition-transform duration-300 ml-4">+</span>
+                    </button>
+                    <div id="exp2" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pb-8 md:pl-40">
+                            <p class="text-sm leading-relaxed max-w-2xl text-textMuted">
+                                Designed user interfaces for various B2B and B2C clients. Conducted user research,
+                                created wireframes, and delivered high-fidelity prototypes. Mentored junior designers
+                                and optimized internal design workflows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="border-b border-borderLight group">
+                    <button class="w-full text-left flex justify-between items-center py-6 focus:outline-none"
+                        onclick="toggleAccordion('exp3')">
+                        <div class="flex flex-col md:flex-row md:items-start md:gap-8 w-full">
+                            <div class="text-textMuted text-sm md:w-32 flex-shrink-0 md:mt-1">
+                                2016 — 2018
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold group-hover:text-textMuted transition-colors">Product
+                                    Designer</h4>
+                                <p class="text-textMuted text-sm">Fintech Startup Inc.</p>
+                            </div>
+                        </div>
+                        <span id="icon-exp3"
+                            class="text-textMuted text-2xl font-light transform transition-transform duration-300 ml-4">+</span>
+                    </button>
+                    <div id="exp3" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pb-8 md:pl-40">
+                            <p class="text-sm leading-relaxed max-w-2xl text-textMuted">
+                                Owned the core design language for a fast-growing financial app. Collaborated with
+                                founders to define product vision and translated user needs into interactive prototypes
+                                and final visuals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Experiences Container -->
+                <div id="more-experiences" style="display: none;" class="space-y-2">
+                    <!-- Experience Item 4 -->
+                    <div class="border-b border-borderLight group">
+                        <button class="w-full text-left flex justify-between items-center py-6 focus:outline-none"
+                            onclick="toggleAccordion('exp4')">
+                            <div class="flex flex-col md:flex-row md:items-start md:gap-8 w-full">
+                                <div class="text-textMuted text-sm md:w-32 flex-shrink-0 md:mt-1">
+                                    2014 — 2016
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold group-hover:text-textMuted transition-colors">
+                                        Junior Web Designer</h4>
+                                    <p class="text-textMuted text-sm">Global Creative Agency</p>
+                                </div>
+                            </div>
+                            <span id="icon-exp4"
+                                class="text-textMuted text-2xl font-light transform transition-transform duration-300 ml-4">+</span>
+                        </button>
+                        <div id="exp4" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="pb-8 md:pl-40">
+                                <p class="text-sm leading-relaxed max-w-2xl text-textMuted">
+                                    Assisted senior designers in creating responsive web layouts, marketing materials,
+                                    and digital assets. Gained proficiency in modern UI patterns and standard design
+                                    workflows.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 5 -->
+                    <div class="border-b border-borderLight group">
+                        <button class="w-full text-left flex justify-between items-center py-6 focus:outline-none"
+                            onclick="toggleAccordion('exp5')">
+                            <div class="flex flex-col md:flex-row md:items-start md:gap-8 w-full">
+                                <div class="text-textMuted text-sm md:w-32 flex-shrink-0 md:mt-1">
+                                    2013 — 2014
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold group-hover:text-textMuted transition-colors">
+                                        Design Intern</h4>
+                                    <p class="text-textMuted text-sm">Tech Solutions</p>
+                                </div>
+                            </div>
+                            <span id="icon-exp5"
+                                class="text-textMuted text-2xl font-light transform transition-transform duration-300 ml-4">+</span>
+                        </button>
+                        <div id="exp5" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="pb-8 md:pl-40">
+                                <p class="text-sm leading-relaxed max-w-2xl text-textMuted">
+                                    Supported the product team by conducting competitor analysis, organizing asset
+                                    libraries, and creating simple wireframes for internal tools.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="toggle-exp-btn"
+                class="mt-8 flex items-center gap-2 text-sm font-medium text-textMain hover:text-textMuted transition-colors group"
+                onclick="toggleMoreExperiences()">
+                <span id="toggle-exp-text">Show all experiences</span>
+                <svg id="toggle-exp-icon"
+                    class="transform transition-transform duration-300 group-hover:translate-y-0.5"
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+        </section>
+
+        <hr class="border-borderLight my-12 reveal">
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-12 reveal">
+            <h3 class="text-xs uppercase tracking-widest text-textMuted font-semibold mb-12">Expertise</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div>
+                    <h4 class="font-medium mb-4">Design</h4>
+                    <ul class="space-y-2 text-sm text-textMuted">
+                        <li>User Interface (UI)</li>
+                        <li>User Experience (UX)</li>
+                        <li>Interaction Design</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Design Systems</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium mb-4">Research</h4>
+                    <ul class="space-y-2 text-sm text-textMuted">
+                        <li>User Interviews</li>
+                        <li>Usability Testing</li>
+                        <li>Information Architecture</li>
+                        <li>A/B Testing</li>
+                        <li>Persona Development</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium mb-4">Tools</h4>
+                    <ul class="space-y-2 text-sm text-textMuted">
+                        <li>Figma / FigJam</li>
+                        <li>Notion</li>
+                        <li>Framer / Webflow</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>HTML / CSS (Basic)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-borderLight my-12 reveal">
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-12 reveal">
+            <div class="flex justify-between items-end mb-12">
+                <h3 class="text-xs uppercase tracking-widest text-textMuted font-semibold">Selected Works</h3>
+
+                <div class="hidden md:flex gap-2">
+                    <button
+                        onclick="document.getElementById('project-slider').scrollBy({left: -350, behavior: 'smooth'})"
+                        class="w-8 h-8 rounded-full border border-borderLight flex items-center justify-center hover:bg-borderLight transition-colors text-textMuted">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button
+                        onclick="document.getElementById('project-slider').scrollBy({left: 350, behavior: 'smooth'})"
+                        class="w-8 h-8 rounded-full border border-borderLight flex items-center justify-center hover:bg-borderLight transition-colors text-textMuted">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="project-slider" class="flex overflow-x-auto gap-6 pb-8 project-scroll snap-x snap-mandatory">
+                <!-- Project 1 -->
+                <a href="#"
+                    class="group block flex-none w-[85vw] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] snap-start">
+                    <div class="aspect-video overflow-hidden bg-borderLight mb-5 rounded-sm">
+                        <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&q=80&w=600"
+                            alt="Fintech App Dashboard"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                    </div>
+                    <span class="text-xs text-textMuted uppercase tracking-wider mb-2 block font-medium">Fintech /
+                        Mobile App</span>
+                    <h4 class="text-lg font-semibold mb-2 group-hover:text-textMuted transition-colors">Nova Dashboard
+                    </h4>
+                    <p class="text-sm text-textMuted leading-relaxed line-clamp-3">
+                        A complete redesign of a leading financial management application. Focused on simplifying
+                        complex data visualizations and improving daily transaction flows for over 2M active users.
+                    </p>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="#"
+                    class="group block flex-none w-[85vw] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] snap-start">
+                    <div class="aspect-video overflow-hidden bg-borderLight mb-5 rounded-sm">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600"
+                            alt="E-Commerce Platform"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                    </div>
+                    <span class="text-xs text-textMuted uppercase tracking-wider mb-2 block font-medium">E-Commerce /
+                        Web</span>
+                    <h4 class="text-lg font-semibold mb-2 group-hover:text-textMuted transition-colors">Aura Lifestyle
+                    </h4>
+                    <p class="text-sm text-textMuted leading-relaxed line-clamp-3">
+                        End-to-end product design for a sustainable fashion brand. Included user research, wireframing,
+                        and creating a seamless checkout experience that increased conversion rates by 25%.
+                    </p>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="#"
+                    class="group block flex-none w-[85vw] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] snap-start">
+                    <div class="aspect-video overflow-hidden bg-borderLight mb-5 rounded-sm">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=600"
+                            alt="SaaS Tool"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                    </div>
+                    <span class="text-xs text-textMuted uppercase tracking-wider mb-2 block font-medium">SaaS /
+                        Desktop</span>
+                    <h4 class="text-lg font-semibold mb-2 group-hover:text-textMuted transition-colors">Nexus Workspace
+                    </h4>
+                    <p class="text-sm text-textMuted leading-relaxed line-clamp-3">
+                        Designed an all-in-one productivity suite targeting remote teams. Developed a modular interface
+                        that allows users to customize their workspace widgets.
+                    </p>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="#"
+                    class="group block flex-none w-[85vw] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] snap-start">
+                    <div class="aspect-video overflow-hidden bg-borderLight mb-5 rounded-sm">
+                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&q=80&w=600"
+                            alt="Health App"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
+                    </div>
+                    <span class="text-xs text-textMuted uppercase tracking-wider mb-2 block font-medium">Health / Mobile
+                        App</span>
+                    <h4 class="text-lg font-semibold mb-2 group-hover:text-textMuted transition-colors">Vitality Tracker
+                    </h4>
+                    <p class="text-sm text-textMuted leading-relaxed line-clamp-3">
+                        A modern health and fitness tracking application focusing on accessibility and mental wellbeing.
+                        Introduced guided breathing exercises alongside standard metrics.
+                    </p>
+                </a>
+            </div>
+        </section>
+
+        <hr class="border-borderLight my-12 reveal">
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 reveal">
+            <h3 class="text-3xl md:text-5xl font-bold tracking-tight mb-6">Let's build something <br>meaningful
+                together.</h3>
+            <p class="text-textMuted mb-10 max-w-md">
+                I'm currently open for new opportunities. Whether you have a question or just want to say hi, I'll try
+                my best to get back to you!
+            </p>
+            <a href="mailto:zeroc00l.080818@mail.com"
+                class="inline-flex items-center gap-2 text-lg font-medium border-b border-textMain pb-1 hover:text-textMuted hover:border-textMuted transition-colors">
+                Drop me an email
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-borderLight py-8 mt-auto">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-textMuted">
+                © <span id="year"></span> Franky Maring. All rights reserved.
+            </p>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="https://www.linkedin.com/in/frankymaring" target="_blank"
+                    class="text-textMuted hover:text-textMain transition-colors">LinkedIn</a>
+                <a href="#" class="text-textMuted hover:text-textMain transition-colors">Dribbble</a>
+                <a href="#" class="text-textMuted hover:text-textMain transition-colors">Twitter</a>
+            </div>
+        </div>
+    </footer>
+    <!-- HTML end -->
+
+    <script src="main_js.js"></script>
+</body>
+
+</html>
